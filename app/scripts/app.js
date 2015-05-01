@@ -10,9 +10,6 @@
  */
 angular
   .module('csiPublicWebsite2015App', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
