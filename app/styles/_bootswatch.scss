@@ -5,12 +5,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 
 // Navbar =====================================================================
-
 .navbar {
   border: none;
   border-radius:0;
   font-size: 14px;
   font-weight: 300;
+    li:hover {
+    cursor: pointer;
+}
+    .navbar-header{
+     margin-right: 10px;   
+    }
   .navbar-toggle:hover .icon-bar {
     background-color: #b3b3b3;
   }
@@ -68,7 +73,9 @@
           background-color: $navbar-hover-green;
           
       }
-      
+    .navbar-nav > .active > a, .navbar-nav > .active > a:hover  {
+         background-color: $navbar-default-link-hover-bg;
+    }
     .dropdown-menu {
       background-color: $navbar-default-bg;
 

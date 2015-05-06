@@ -1,10 +1,14 @@
-@import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(bootstrap-yeti.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 .navbar {
   border: none;
   border-radius: 0;
   font-size: 14px;
   font-weight: 300; }
+  .navbar li:hover {
+    cursor: pointer; }
+  .navbar .navbar-header {
+    margin-right: 10px; }
   .navbar .navbar-toggle:hover .icon-bar {
     background-color: #b3b3b3; }
   .navbar .navbar-default .navbar-nav > .active > a:focus {
@@ -39,6 +43,8 @@
     .navbar-default > .nav > .navbar-nav > li > .active > a:focus {
       color: #555333;
       background-color: #B5FF97; }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+      background-color: #447B3A; }
     .navbar-default .dropdown-menu {
       background-color: white; }
       .navbar-default .dropdown-menu > li > a,
@@ -47,7 +53,7 @@
       .navbar-default .dropdown-menu > li > a:hover,
       .navbar-default .dropdown-menu > .active > a,
       .navbar-default .dropdown-menu > .active > a:hover {
-        background-color: #272727; }
+        background-color: #447B3A; }
   .navbar-inverse .dropdown-menu {
     background-color: #008cba; }
     .navbar-inverse .dropdown-menu > li > a,
