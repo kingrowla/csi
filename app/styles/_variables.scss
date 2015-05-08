@@ -19,7 +19,8 @@ $brand-success:         #43ac6a;
 $brand-info:            #5bc0de;
 $brand-warning:         #E99002;
 $brand-danger:          #F04124;
-
+//jp orange grayscale//
+$gray-orange:           #353331; 
 
 //== Scaffolding
 //
@@ -358,7 +359,6 @@ $navbar-border-radius:             $border-radius-base;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
 $navbar-collapse-max-height:       340px;
-$navbar-hover-green:               #B5FF97;
 
 $navbar-default-color:             #fff;
 $navbar-default-bg:                lighten($gray-dark, 90%);
@@ -372,6 +372,8 @@ $navbar-default-link-active-color:         #fff;
 $navbar-default-link-active-bg:            #447B3A;
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
+
+$navbar-hover-green:                       lighten($navbar-default-link-hover-bg, 5%);
 
 // Navbar brand label
 $navbar-default-brand-color:               $navbar-default-link-color;
