@@ -45,7 +45,6 @@
   padding-top: 5px; }
 
 #footer {
-  background: #f1f1f1;
   border-top: 1px solid #dedede;
   margin-top: -2px;
   padding-top: 30px;
@@ -113,9 +112,6 @@
 #final-footer i {
   font-size: auto; }
 
-.header {
-  border-top: 3px solid #4e8c42; }
-
 .navbar {
   border: none;
   border-radius: 0;
@@ -153,6 +149,7 @@
   .navbar .dropdown-header {
     color: rgba(255, 255, 255, 0.5); }
   .navbar-default {
+    border-top: 3px solid #4e8c42;
     background-color: white; }
     .navbar-default .navbar-nav > li > a {
       color: #353331; }

@@ -23,7 +23,7 @@
 <!--http://www.fima.lt/en/#top-->
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
 
@@ -50,26 +50,41 @@
         </div>
       </div>
     </div> 
-       
+    
       <div class="container" style="width:100%; padding:0; margin-top:-20px;">
-          <div class="container" style="width:100%; height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:absolute; top:60; text-align:center;  z-index:999;"><span style="text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;">THE RESPONSIVE PAYMENT PLATFORM</span></div>
-          <ul class="rslides">
-              <li><img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/support.jpg" alt='img1'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/consumer.jpg" alt='img2'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/reconciliation2.jpg" alt='img3'></li>
-            </ul>
-      </div>
-    <div class="container">
+          <div class="container" style="width:100%; height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:110px; text-align:center; z-index:999;"><span id="titleHeader" style="text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;">THE RESPONSIVE PAYMENT PLATFORM</span>
+          
+              
+          </div>
+          
+            <div class="row">
+    
+      <div class="col-xs-10 col-xs-offset-1">
+      
+             <div class="container" style="background-color:white; height:750px; width:100%; position:absolute; top:150px; opacity:.75;">
     <div ng-view=""></div>
     </div>
+         </div>
+      </div>
+          
+          <ul class="rslides">
+              <li><img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/support.jpg" alt='Collector solutions support'></li>
+              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/consumer.jpg" alt='Collector solutions consumer'></li>
+              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/reconciliation2.jpg" alt='Collector solutions reconciliation'></li>
+              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/flexbile.jpg" alt='Collector solutions flexbile'></li>
+              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/responsive.jpg" alt='Collector solutions responsive'></li>
+            </ul>
+      </div>
+   
+      
 <!--  footer  -->
 <div id="footer">
 <div class="container">
   <div class="row">
     
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-xs-12">
         <div class="foot-header">
-          MENU 
+            MENU
         </div>
         <div class="foot-links">
           <a href="#/"><i class="fa fa-fw fa-home"></i> HOME</a>
@@ -80,18 +95,18 @@
             <a href="http://api.collectorsolutions.com/"><i class="fa fa-fw fa-code"></i> API</a>
         </div>
       </div><!--/col-sm-3-->
-    <div class="col-sm-3">
-      <div class="foot-header"> CONNECT <i class="fa fa-fw fa-mobile fa-lg"></i></div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="foot-header"> CONNECT <i class="fa fa-fw fa-mobile fa-lg"></i></div>
       <div class="foot-links">
       	<a href="#"><i class="fa fa-fw fa-map-marker"></i> 316 S Baylen, Pensacola, FL 32502</a>
        <a href="#"><i class="fa fa-fw fa-phone"></i> 850-444-9330</a>
         <a href="mailto:help@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Need help?</a>
         <a href="mailto:sales@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Contact Sales</a>
+          <a href="#" id="bottomCall"><i class="fa fa-fw fa-laptop"></i> Get a Demo</a>
         <a href="#/privacy"><i class=" fa fa-fw fa-user-secret"></i> Privacy Policy</a>
-        <a href="#" id="bottomCall"><i class="fa fa-fw fa-laptop"></i> Get a Demo</a>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 col-xs-12">
       <div class="foot-header">
           PAYMENT SOLUTIONS <i class="fa fa-fw fa-credit-card fa-lg"></i>
       </div>
@@ -99,24 +114,23 @@
           <img src="images/cc_group_small.png">
       </div>
     </div><!--/col-sm-3-->
-    <div class="col-sm-3">
+    <div class="col-sm-3 col-xs-12">
     
     </div>
-    
   	</div><!--/row-->
   <div class="row">
-    <div id="bottom-footer">
-     
+    <div id="bottom-footer" style="text-align:center; margin-top:15px;">
+      <span style="font-style:italic; font-size:14px;">"CollectorSolutions was founded with a core principle: That its operating platform would be a client-based solution addressing business efficiency"<br> - Gene M. Valentino, Founder &amp; CEO</span>
   </div><!--/row 2-->
       <div class="row" id="final-footer">
-        <div class="col-sm-4">
-         
+        <div class="col-xs-4">
+           
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-xs-4 text-center">
         	Copyright © 2015 CollectorSolutions, Inc. All Rights Reserved
 			<br>316 S Baylen St, Pensacola, Florida - USA
         </div>
-        <div class="col-sm-4 text-right">
+        <div class="col-xs-4 text-right">
         	<span class="fa-stack fa-lg">
                <i class="fa fa-circle text-primary fa-stack-2x"></i>
                <a href="https://www.facebook.com/collectorsolutionsinc" target="_blank"><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
@@ -166,11 +180,21 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
       <script src="../node_modules/jquery/dist/jquery.min.js"></script>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
       <script src="scripts/responsiveSlides.js"></script>
       <script lang="javascript"> 
+          var headerText = ["THE RESPONSIVE PAYMENT PLATFORM", "PAYMENT PROCESSING", "SIMPLE RECONCILIATION", "FLEXIBLE ADMINISTRATION TOOLS", "DEDICATED CUSTOMER SERVICE"];
           $(function() {
-    $(".rslides").responsiveSlides();
-  });
+                var counter = 1;
+              $(".rslides").responsiveSlides({timeout:5000, before: function(){
+                  $("#titleHeader").text(headerText[counter]);
+                  counter++;
+                  if(counter == headerText.length){
+                   counter = 0;   
+                  }
+              }});
+            });
       </script>
 <!--        <script src="scripts/app.js"></script>-->
 <!--        <script src="scripts/controllers/main.js"></script>-->

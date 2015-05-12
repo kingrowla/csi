@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'ScrollMagic' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'ScrollMagic', null ]
+7 verbose cache add name=undefined spec="ScrollMagic" args=["ScrollMagic",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'ScrollMagic',
+8 verbose parsed url   path: 'ScrollMagic',
+8 verbose parsed url   href: 'ScrollMagic' }
+9 silly lockFile 98df0e8c-ScrollMagic ScrollMagic
+10 verbose lock ScrollMagic C:\Users\ansont\AppData\Roaming\npm-cache\98df0e8c-ScrollMagic.lock
+11 silly lockFile 98df0e8c-ScrollMagic ScrollMagic
+12 silly lockFile 98df0e8c-ScrollMagic ScrollMagic
+13 verbose addNamed [ 'ScrollMagic', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 3646cf8d-ScrollMagic ScrollMagic@
+16 verbose lock ScrollMagic@ C:\Users\ansont\AppData\Roaming\npm-cache\3646cf8d-ScrollMagic.lock
+17 silly addNameRange { name: 'ScrollMagic', range: '*', hasData: false }
+18 verbose url raw ScrollMagic
+19 verbose url resolving [ 'https://registry.npmjs.org/', './ScrollMagic' ]
+20 verbose url resolved https://registry.npmjs.org/ScrollMagic
+21 info trying registry request attempt 1 at 16:26:55
+22 http GET https://registry.npmjs.org/ScrollMagic
+23 http 404 https://registry.npmjs.org/ScrollMagic
+24 silly registry.get cb [ 404,
+24 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '51',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     date: 'Tue, 12 May 2015 21:26:55 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-jfk1029-JFK',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1431466015.551007,VS0,VE89' } ]
+25 silly lockFile 3646cf8d-ScrollMagic ScrollMagic@
+26 silly lockFile 3646cf8d-ScrollMagic ScrollMagic@
+27 error 404 'ScrollMagic' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404 It was specified as a dependency of 'csipublicwebsite2015'
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Windows_NT 6.1.7601
+29 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ScrollMagic"
+30 error cwd c:\DevProjects\csi_web\csi
+31 error node -v v0.10.26
+32 error npm -v 1.4.3
+33 error code E404
+34 verbose exit [ 1, true ]
