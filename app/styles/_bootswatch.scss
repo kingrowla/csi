@@ -123,6 +123,14 @@
 #final-footer i{
 	font-size: auto;
 }
+.bullet-box-shadow{
+  padding:5px 10px 25px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);   
+}
 // Navbar =====================================================================
 .navbar {
   border: none;
@@ -204,14 +212,14 @@
 //          background-color: $navbar-hover-green;
 //          
 //      }
-    .navbar-nav > li > a:hover{
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
           color: $navbar-hover-green;
           background-color: transparent;
           
       } 
     .navbar-nav{
         float: right;
-        margin-top: 45px;
+        margin-top: 5px;
         margin-bottom: 20px;
     }
     .dropdown-menu {
