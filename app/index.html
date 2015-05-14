@@ -65,35 +65,36 @@
     </div> 
     
       <div class="container" style="width:100%; padding:0;">
-          <div class="container" style="width:100%; height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:118px; border-top:1px solid rgb(110, 106, 103);  text-align:center; z-index:999;"><span id="titleHeader" style="text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;">THE RESPONSIVE PAYMENT PLATFORM</span>
-          
+          <div class="container" style="width:100%; height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:118px; text-align:center; z-index:999;"><span id="titleHeader" style="text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;">THE RESPONSIVE PAYMENT PLATFORM</span>
               
           </div>
-          
-            
-      <div class="col-xs-12">
-      
-             <div class="container">
-    <div ng-view="" style="height:auto; position:absolute; text-align:center; top:300px; z-index:998;"></div>
-    </div>
-      
-          </div>
-          <ul class="rslides">
+          <div style="position:fixed; z-index:0;">
+           <ul class="rslides">
               <li><img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/support.jpg" alt='Collector solutions support'></li>
               <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/consumer.jpg" alt='Collector solutions consumer'></li>
               <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/reconciliation2.jpg" alt='Collector solutions reconciliation'></li>
               <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/flexbile.jpg" alt='Collector solutions flexbile'></li>
               <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/responsive.jpg" alt='Collector solutions responsive'></li>
             </ul>
+     </div>
+         
       </div>
-   
+      <div class="row">       
+      <div class="col-xs-12">
       
+             <div class="container">
+    <div ng-view="" style="text-align:center; height:auto; width:100%; z-index:998; margin-bottom:150px;"></div>
+    </div>
+      
+          </div>
+      </div>
 <!--  footer  -->
+<div class="row">
+      <div class="col-xs-12">      
 <div id="footer">
 <div class="container">
   <div class="row">
-    
-      <div class="col-sm-3 col-xs-12">
+      <div class="col-sm-3 col-xs-6">
         <div class="foot-header">
             MENU
         </div>
@@ -106,7 +107,7 @@
             <a href="http://api.collectorsolutions.com/"><i class="fa fa-fw fa-code"></i> API</a>
         </div>
       </div><!--/col-sm-3-->
-    <div class="col-sm-3 col-xs-12">
+    <div class="col-sm-3 col-xs-6">
         <div class="foot-header"> CONNECT <i class="fa fa-fw fa-mobile fa-lg"></i></div>
       <div class="foot-links">
       	<a href="#"><i class="fa fa-fw fa-map-marker"></i> 316 S Baylen, Pensacola, FL 32502</a>
@@ -117,7 +118,7 @@
         <a href="#/privacy"><i class=" fa fa-fw fa-user-secret"></i> Privacy Policy</a>
       </div>
     </div>
-        <div class="col-sm-3 col-xs-12">
+        <div class="col-sm-3 col-xs-6">
       <div class="foot-header">
           PAYMENT SOLUTIONS
       </div>
@@ -130,7 +131,7 @@
         <a href="#/privacy"><i class=" fa fa-fw fa-mobile-phone"></i> Mobile</a>
       </div>
     </div>
-    <div class="col-sm-3 col-xs-12">
+    <div class="col-sm-3 col-xs-6">
       <div class="foot-header">
           PAYMENT OPTIONS <i class="fa fa-fw fa-credit-card fa-lg"></i>
       </div>
@@ -143,9 +144,12 @@
   
   	</div><!--/row-->
   <div class="row">
+      <div class="col-xs-12">
     <div id="bottom-footer" style="text-align:center; margin-top:15px;">
       <span style="font-style:italic; font-size:14px;">"CollectorSolutions was founded with a core principle: That its operating platform would be a client-based solution addressing business efficiency."<br> - Gene M. Valentino, Founder &amp; CEO</span>
-  </div><!--/row 2-->
+  </div>
+          </div></div>
+          <!--/row 2-->
       <div class="row" id="final-footer">
         <div class="col-xs-4">
            
@@ -170,7 +174,7 @@
         </div>
       </div>
   </div><!--/container-->
-</div><!--/footer--></div>
+</div><!--/footer--></div></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
