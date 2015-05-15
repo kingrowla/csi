@@ -46,8 +46,9 @@
 
 #footer {
   background-color: #fff;
-  margin-top: -2px;
+/*  margin-top: -2px;*/
   padding-top: 60px;
+    padding-left:50px;
   padding-bottom: 30px; }
 
 .foot-header {
@@ -67,11 +68,6 @@
 #bottom-footer a {
   text-decoration: none;
   color: #626262;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
   font-size: 12px;
   padding: 0px 15px;
   border-right: 1px solid #ccc;
