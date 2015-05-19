@@ -118,6 +118,9 @@
 
 body.modal-open {
   overflow: auto; }
+#salesModal label{
+    font-size: 14px;
+}
 
 body {
   padding-right: 0px !important;
