@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -11,274 +12,294 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-<!--    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-yeti.css">-->
-      <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <!--    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-yeti.css">-->
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="csiPublicWebsite2015App">
-      <!--[if lt IE 7]>
+</head>
+
+<body ng-app="csiPublicWebsite2015App">
+    <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<!--http://www.fima.lt/en/#top-->
+    <!--http://www.fima.lt/en/#top-->
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-            <a class="navbar-brand" href="#/">
-             <img class="hidden-md hidden-sm hidden-lg visible-xs" style="margin-top:-5px;" src="images/collectorLogo2015_sm.png" alt="Collector Solutions, Inc." />
-             <img class="visible-md visible-sm visible-lg hidden-xs" src="images/collectorLogo2015.png" alt="Collector Solutions, Inc."/> 
-              </a>
-          </div>
+                    <a class="navbar-brand" href="#/">
+                        <img class="hidden-md hidden-sm hidden-lg visible-xs" style="margin-top:-5px;" src="images/collectorLogo2015_sm.png" alt="Collector Solutions, Inc." />
+                        <img class="visible-md visible-sm visible-lg hidden-xs" src="images/collectorLogo2015.png" alt="Collector Solutions, Inc." />
+                    </a>
+                </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-         <div class="col-xs-12 text-right" style="margin-bottom:-70px; margin-top:-50px; padding-top:15px;">
-                    <span class="fa-stack fa-lg">
+                <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                    <div class="col-xs-12 text-right" style="margin-bottom:-70px; margin-top:-50px; padding-top:15px;">
+                        <span class="fa-stack fa-lg">
                        <i class="fa fa-circle text-primary fa-stack-2x"></i>
                        <a href="https://www.facebook.com/collectorsolutionsinc" target="_blank"><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
                     </span>
-                  <span class="fa-stack fa-lg">
+                        <span class="fa-stack fa-lg">
                      <i class="fa fa-circle text-info fa-stack-2x"></i>
                       <a href="https://twitter.com/csipayments" target="_blank"><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
                     </span>
-              <span class="fa-stack fa-lg">
+                        <span class="fa-stack fa-lg">
                      <i class="fa fa-circle text-danger fa-stack-2x"></i>
                       <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></a>
                     </span>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/">HOME</a>
+                        </li>
+                        <li><a ng-href="#/solution">SOLUTION</a>
+                        </li>
+                        <li><a ng-href="#/about">ABOUT</a>
+                        </li>
+                        <li><a ng-href="#/media">MEDIA</a>
+                        </li>
+                        <li><a id="contactCall" ng-href="#/contact">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
-            <ul class="nav navbar-nav">
-              <li><a href="#/">HOME</a></li>
-              <li><a ng-href="#/solution">SOLUTION</a></li>
-              <li><a ng-href="#/about">ABOUT</a></li>
-              <li><a ng-href="#/media">MEDIA</a></li>
-              <li><a id="contactCall" ng-href="#/contact">CONTACT</a></li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </div>
-    </div> 
-    
-      <div class="container" style="width:100%; padding:0;">
-          <div class="container" style="width:100%; height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:118px; text-align:center; z-index:999;"><span id="titleHeader" style="text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;">THE RESPONSIVE PAYMENT PLATFORM</span>
-              
-          </div>
-          <div style="position:fixed; z-index:0;">
-           <ul class="rslides">
-              <li><img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/support.jpg" alt='Collector solutions support'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/consumer.jpg" alt='Collector solutions consumer'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/reconciliation2.jpg" alt='Collector solutions reconciliation'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/flexbile.jpg" alt='Collector solutions flexbile'></li>
-              <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/responsive.jpg" alt='Collector solutions responsive'></li>
-            </ul>
-     </div>
-         
-      </div>
-        <div class="container">
-      <div class="row">       
-      <div class="col-xs-12">
-      
-           
-    <div ng-view="" style="text-align:center; width:100%; z-index:998; margin-bottom:150px; margin-top:200px; min-height:300px;"></div>
     </div>
-      
-          </div>
-      </div>
-<!--  footer  -->
-       
-<div class="navbar" style="background-color:white; margin-bottom:-50px;">      
-<div class="container">
-    <div id="footer">
-  <div class="row">
-      <div class="col-sm-3 col-xs-6">
-        <div class="foot-header">
-            MENU
-        </div>
-        <div class="foot-links">
-          <a href="#/"><i class="fa fa-fw fa-home"></i> HOME</a>
-          <a href="#/solution"><i class="fa fa-fw fa-cogs"></i> SOLUTION</a>
-          <a href="#/about"><i class="fa fa-fw fa-info"></i> ABOUT</a>
-          <a href="#/media"><i class="fa fa-fw fa-newspaper-o"></i> MEDIA</a>
-         <a href="#/contact"><i class="fa fa-fw fa-phone"></i> CONTACT</a>
-            <a href="http://api.collectorsolutions.com/"><i class="fa fa-fw fa-code"></i> API</a>
-        </div>
-      </div>
-    <div class="col-sm-3 col-xs-6">
-        <div class="foot-header"> CONNECT <i class="fa fa-fw fa-mobile fa-lg"></i></div>
-      <div class="foot-links">
-      	<a href="#"><i class="fa fa-fw fa-map-marker"></i> 316 S Baylen, Pensacola, FL 32502</a>
-       <a href="#"><i class="fa fa-fw fa-phone"></i> 850-444-9330</a>
-        <a href="mailto:help@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Need help?</a>
-        <a href="mailto:sales@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Contact Sales</a>
-          <a href="#" id="bottomCall"><i class="fa fa-fw fa-laptop"></i> Get a Demo</a>
-        <a href="#/privacy"><i class=" fa fa-fw fa-user-secret"></i> Privacy Policy</a>
-      </div>
-    </div>
-        <div class="col-sm-3 col-xs-6">
-      <div class="foot-header">
-          PAYMENT SOLUTIONS
-      </div>
-         <div class="foot-links">
-      	<a href="#"><i class="fa fa-fw fa-globe"></i> Web</a>
-       <a href="#"><i class="fa fa-fw fa-phone"></i> Phone</a>
-        <a href="mailto:help@collectorsolutions.com"><i class="fa fa-fw fa-building"></i> Point of Sale</a>
-        <a href="mailto:sales@collectorsolutions.com"><i class="fa fa-fw fa-refresh"></i> Recurring Billing</a>
-          <a href="#" id="bottomCall"><i class="fa fa-fw fa-bullhorn"></i> IVR</a>
-        <a href="#/privacy"><i class=" fa fa-fw fa-mobile-phone"></i> Mobile</a>
-      </div>
-    </div>
-    <div class="col-sm-3 col-xs-6">
-      <div class="foot-header">
-          PAYMENT OPTIONS <i class="fa fa-fw fa-credit-card fa-lg"></i>
-      </div>
-      <div class="foot-links" style="margin-top:-10px">
-          <a href="#"> <img src="images/cc_group_small.png"></a>
-           <a href="#"><i class="fa fa-fw fa-mobile"></i> Text to Pay</a>
-        <a href="#"><i class="fa fa-fw fa-desktop"></i> Electronic Bill Presentment</a>
-      </div>
-    </div>
-    <div class="col-xs-12">
-    <div id="bottom-footer" style="text-align:center; margin-top:15px;">
-      <span style="font-style:italic; font-size:14px;">"CollectorSolutions was founded with a core principle: That its operating platform would be a client-based solution addressing business efficiency."<br> - Gene M. Valentino, Founder &amp; CEO</span>
-  </div>
-          </div>
-  	</div>
-      
 
-      
-<!--
-  <div class="row">
-      <div class="col-xs-12">
-    <div id="bottom-footer" style="text-align:center; margin-top:15px;">
-      <span style="font-style:italic; font-size:14px;">"CollectorSolutions was founded with a core principle: That its operating platform would be a client-based solution addressing business efficiency."<br> - Gene M. Valentino, Founder &amp; CEO</span>
-  </div>
-          </div></div>
--->
-          
-      <div class="row" id="final-footer">
-        <div class="col-xs-4">
-           
+    <div class="row">
+        <div class="col-xs-12">
+        <div class="title-feed">
+            <span id="titleHeader">THE RESPONSIVE PAYMENT PLATFORM</span>
+        </div></div></div>
+        <div style="position:fixed; z-index:0;">
+            <ul class="rslides">
+                <li><img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/support.jpg" alt='Collector solutions support'>
+                </li>
+                <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/consumer.jpg" alt='Collector solutions consumer'>
+                </li>
+                <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/reconciliation2.jpg" alt='Collector solutions reconciliation'>
+                </li>
+                <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/flexbile.jpg" alt='Collector solutions flexbile'>
+                </li>
+                <li> <img class="img-responsive" src="https://s3.amazonaws.com/csi_public_site/responsive.jpg" alt='Collector solutions responsive'>
+                </li>
+            </ul>
         </div>
-        <div class="col-xs-4 text-center">
-        	Copyright © 2015 CollectorSolutions, Inc. All Rights Reserved
-			<br>316 S Baylen St, Pensacola, Florida - USA
+
+    
+
+    <div class="row">
+        <div class="col-xs-12">
+
+
+            <div ng-view="" style="text-align:center; z-index:998; min-height:300px;"></div>
         </div>
-        <div class="col-xs-4 text-right">
-        	<span class="fa-stack fa-lg">
+
+    </div>
+
+    <!--  footer  -->
+ <div class="row">
+    <div class="navbar" style="background-color:rgb(249, 249, 249); border-top: 1px solid #E0E0E0; margin-bottom:-50px; padding:50px 0 25px 0;">
+            <div class="container">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="foot-header">
+                        MENU
+                    </div>
+                    <div class="foot-links">
+                        <a href="#/"><i class="fa fa-fw fa-home"></i> HOME</a>
+                        <a href="#/solution"><i class="fa fa-fw fa-cogs"></i> SOLUTION</a>
+                        <a href="#/about"><i class="fa fa-fw fa-info"></i> ABOUT</a>
+                        <a href="#/media"><i class="fa fa-fw fa-newspaper-o"></i> MEDIA</a>
+                        <a href="#/contact"><i class="fa fa-fw fa-phone"></i> CONTACT</a>
+                        <a href="http://api.collectorsolutions.com/"><i class="fa fa-fw fa-code"></i> API</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="foot-header"> CONNECT <i class="fa fa-fw fa-mobile fa-lg"></i>
+                    </div>
+                    <div class="foot-links">
+                        <a href="#"><i class="fa fa-fw fa-map-marker"></i> 316 S Baylen, Pensacola, FL 32502</a>
+                        <a href="#"><i class="fa fa-fw fa-phone"></i> 850-444-9330</a>
+                        <a href="mailto:help@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Need help?</a>
+                        <a href="mailto:sales@collectorsolutions.com"><i class="fa fa-fw fa-envelope"></i> Contact Sales</a>
+                        <a href="#" id="bottomCall"><i class="fa fa-fw fa-laptop"></i> Get a Demo</a>
+                        <a href="#/privacy"><i class=" fa fa-fw fa-user-secret"></i> Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="foot-header">
+                        PAYMENT SOLUTIONS
+                    </div>
+                    <div class="foot-links">
+                        <a href="#"><i class="fa fa-fw fa-globe"></i> Web</a>
+                        <a href="#"><i class="fa fa-fw fa-phone"></i> Phone</a>
+                        <a href="mailto:help@collectorsolutions.com"><i class="fa fa-fw fa-building"></i> Point of Sale</a>
+                        <a href="mailto:sales@collectorsolutions.com"><i class="fa fa-fw fa-refresh"></i> Recurring Billing</a>
+                        <a href="#" id="bottomCall"><i class="fa fa-fw fa-bullhorn"></i> IVR</a>
+                        <a href="#/privacy"><i class=" fa fa-fw fa-mobile-phone"></i> Mobile</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="foot-header">
+                        PAYMENT OPTIONS <i class="fa fa-fw fa-credit-card fa-lg"></i>
+                    </div>
+                    <div class="foot-links" style="margin-top:-10px">
+                        <a href="#"> <img src="images/cc_group_small.png">
+                        </a>
+                        <a href="#"><i class="fa fa-fw fa-mobile"></i> Text to Pay</a>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Electronic Bill Presentment</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-xs-12">
+                            <div id="bottom-footer" style="text-align:center; margin-top:15px;">
+                                <span style="font-style:italic; font-size:14px;">"CollectorSolutions was founded with a core principle: That its operating platform would be a client-based solution addressing business efficiency."<br> - Gene M. Valentino, Founder &amp; CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div id="final-footer">
+                            <div class="col-xs-4">
+
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                Copyright © 2015 CollectorSolutions, Inc. All Rights Reserved
+                                <br>316 S Baylen St, Pensacola, Florida - USA
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <span class="fa-stack fa-lg">
                <i class="fa fa-circle text-primary fa-stack-2x"></i>
                <a href="https://www.facebook.com/collectorsolutionsinc" target="_blank"><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
             </span>
-          <span class="fa-stack fa-lg">
+                                <span class="fa-stack fa-lg">
              <i class="fa fa-circle text-info fa-stack-2x"></i>
               <a href="https://twitter.com/csipayments" target="_blank"><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
             </span>
-             <span class="fa-stack fa-lg">
+                                <span class="fa-stack fa-lg">
              <i class="fa fa-circle text-danger fa-stack-2x"></i>
               <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></a>
             </span>
-        </div>
-      </div>
-        
-        </div>
-</div></div>
-<!--      modal-->
-       <div id="salesModal" class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Let's talk. Fill this out so we can start crafting your solution.</h4>
-              </div>
-              <div class="modal-body">
-                <h4 class="text-muted center-content"><i class="fa fa-fw fa-phone"></i> Want to call us? 1-877-813-0199</h4>
-                <form role="form">
-                  <div class="form-group">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="What you like to be called">
-                    <span class="help-block">Required</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="An email address we can send info to">
-                    <span class="help-block">Required</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputPhone">Phone</label>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="A good contact number so we can chat">
-                    <span class="help-block">Required</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputCompany">Company</label>
-                    <input type="text" class="form-control" id="inputCompany" placeholder="What company do you represent?">
-                  </div>
-                  <div class="form-group">
-                    <label for="inputQuestion">Ask us a question</label>
-                    <input type="text" class="form-control" id="inputQuestion" placeholder="ex. How quickly do you return funds?">
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button id="sendInfo" type="button" class="btn btn-success">Send</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->       
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-            //Google analytics
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-17097674-1']);
-            _gaq.push(['_trackPageview']);
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            (function () {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
+        </div>
+
+
+    </div>
+    <!--      modal-->
+    <div id="salesModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Let's talk. Fill this out so we can start crafting your solution.</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-muted center-content"><i class="fa fa-fw fa-phone"></i> Want to call us? 1-877-813-0199</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="What you like to be called">
+                            <span class="help-block">Required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="An email address we can send info to">
+                            <span class="help-block">Required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="A good contact number so we can chat">
+                            <span class="help-block">Required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCompany">Company</label>
+                            <input type="text" class="form-control" id="inputCompany" placeholder="What company do you represent?">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputQuestion">Ask us a question</label>
+                            <input type="text" class="form-control" id="inputQuestion" placeholder="ex. How quickly do you return funds?">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="sendInfo" type="button" class="btn btn-success">Send</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        //Google analytics
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17097674-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-      <script src="../node_modules/angular/angular.js"></script>
-      <script src="../node_modules/angular-route/angular-route.js"></script>
-      <script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
-      <script src="../node_modules/angular-touch/angular-touch.js"></script>
-      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-      <script src="scripts/responsiveSlides.js"></script>
-      <script lang="javascript"> 
-          var headerText = ["THE RESPONSIVE PAYMENT PLATFORM", "PAYMENT PROCESSING", "SIMPLE RECONCILIATION", "FLEXIBLE ADMINISTRATION TOOLS", "DEDICATED CUSTOMER SERVICE"];
-          $(function() {
-                var counter = 1;
-              $(".rslides").responsiveSlides({timeout:5000, before: function(){
-                  $("#titleHeader").text(headerText[counter]);
-                  counter++;
-                  if(counter == headerText.length){
-                   counter = 0;   
-                  }
-              }});
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../node_modules/angular-touch/angular-touch.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="scripts/responsiveSlides.js"></script>
+    <script lang="javascript">
+        var headerText = ["THE RESPONSIVE PAYMENT PLATFORM", "PAYMENT PROCESSING", "SIMPLE RECONCILIATION", "FLEXIBLE ADMINISTRATION TOOLS", "DEDICATED CUSTOMER SERVICE"];
+        $(function () {
+            var counter = 1;
+            $(".rslides").responsiveSlides({
+                timeout: 5000,
+                before: function () {
+                    $("#titleHeader").text(headerText[counter]);
+                    counter++;
+                    if (counter == headerText.length) {
+                        counter = 0;
+                    }
+                }
             });
-      </script>
-       <script src="scripts/app.js"></script>
-       <script src="scripts/controllers/main.js"></script>
-       <script src="scripts/controllers/about.js"></script>
-      <script src="scripts/controllers/media.js"></script>
-      <script src="scripts/controllers/solution.js"></script>
-      <script src="scripts/modal.js"></script>
-        <!-- endbuild -->
+        });
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/media.js"></script>
+    <script src="scripts/controllers/solution.js"></script>
+    <script src="scripts/modal.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

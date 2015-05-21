@@ -53,23 +53,12 @@
 .foot-links img{
 	padding-top: 5px;
 }
-#footer{
-  background-color: #fff;
-  //border-top: 1px solid rgb(222, 222, 222);
-//  margin-top: -2px;
-  padding-top: 60px;
-  padding-bottom: 30px;
- }
 .foot-header{
   font-family: OpenSansBold, Arial, sans-serif;
   font-size: 18px;
   color: rgb(63, 63, 63);
   padding-bottom: 20px;
   text-shadow: rgb(255, 255, 255) 1px 1px 0px;
-}
-  
-#footer .container{
-//	max-width: 1100px;
 }
 #bottom-footer{
   margin-bottom: 20px;
@@ -81,40 +70,19 @@
 #bottom-footer a{
 	  text-decoration: none;
   color: #626262;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+//  -webkit-transition: all .2s ease-in-out;
+//  -moz-transition: all .2s ease-in-out;
+//  -o-transition: all .2s ease-in-out;
+//  -ms-transition: all .2s ease-in-out;
+//  transition: all .2s ease-in-out;
   font-size: 12px;
   padding: 0px 15px;
   border-right: 1px solid #ccc;
   font-family: 'OpenSansRegular', Arial, sans-serif;
   font-size: 13px;
   color: #626262;
-  padding: 0 12px;
+  padding: 0;
   text-shadow: 1px 1px 0 rgba(255,255,255,1);
-}
-#bottom-footer .phone img{
-	margin-right: 7px;
-}
-#bottom-footer .phone .red{
-	font-size: 22px;
-  margin-top: -7px;
-  font-family: 'OpenSansRegular', Arial, sans-serif;
-  font-size: 18px!important;
-  color: #d10029!important;
-  position: relative;
-  top: -5px;
-  text-shadow: 1px 1px 0 rgba(255,255,255,1)!important;
-}
-#bottom-footer .phone .red small{
-	font-family: 'OpenSansRegular', Arial, sans-serif;
-  font-size: 12px!important;
-  display: block;
-  color: #626262!important;
-  text-shadow: 1px 1px 0 rgba(255,255,255,1)!important;
-  margin-top: -5px;
 }
 #final-footer{
 	font-size: 11px;
@@ -134,10 +102,27 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 body.modal-open {
 overflow: auto;
 }
-body{
- padding-right:0px !important;
-  margin-right:0px !important;  
+//body{
+// padding-right:0px !important;
+//  margin-right:0px !important;  
+//}
+.title-feed span{
+   text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;
 }
+.title-feed{
+  height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:118px; text-align:center; z-index:999;   
+}
+ @media (max-width: 768px) {  
+    .title-feed{
+     top:47px;
+        padding:15px;
+        
+    }
+        .title-feed span{
+     font-size: 36px;
+        
+    }
+ }
 // Navbar =====================================================================
 .navbar {
   border: none;
@@ -148,7 +133,7 @@ body{
     cursor: pointer;
 }
     .navbar-header{
-     margin-right: 10px;   
+//     margin-right: 10px;   
     }
   .navbar-toggle:hover .icon-bar {
     background-color: #b3b3b3;
@@ -231,7 +216,7 @@ body{
           
       } 
     @media (min-width: 768px) {  
-    .navbar-nav {
+        .navbar-nav {
         float: right;
         margin-top: 5px;
         margin-bottom: 20px;
