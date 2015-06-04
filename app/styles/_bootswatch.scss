@@ -106,6 +106,9 @@ overflow: auto;
 body{
 overflow-x:hidden !important;
 }
+html, body{
+ height:100%;   
+}
 .title-feed span{
    text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;
 }
