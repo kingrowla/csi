@@ -28,6 +28,10 @@ angular
         templateUrl: 'views/solution.html',
         controller: 'SolutionCtrl'
       })
+     .when('/privacy', {
+        templateUrl: 'views/policy.html',
+        controller: 'PolicyCtrl'
+      })
     .when('/media', {
         templateUrl: 'views/media.html',
         controller: 'MediaCtrl'
