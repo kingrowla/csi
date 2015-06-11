@@ -9,9 +9,9 @@
  */
 angular.module('csiPublicWebsite2015App')
   .controller('MediaCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+     $("html, body").animate({
+            scrollTop: 0
+        }, 200);
+       
+    
   });

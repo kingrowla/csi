@@ -99,10 +99,6 @@
 -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);   
 }
-body.modal-open {
-overflow: auto;
-}
-
 body{
 overflow-x:hidden !important;
 background-color: #1A2817;    
@@ -114,7 +110,7 @@ html, body{
    text-shadow: 1px 1px 1px #000; font-size:48px; line-height:1;
 }
 .title-feed{
-  height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.3); color:white; border:none; position:fixed; top:118px; text-align:center; z-index:999; width:100%;  
+  height:auto; padding:25px; background-color:rgba(0, 0, 0, 0.1); color:white; border:none; position:fixed; top:118px; text-align:center; z-index:999; width:100%; border-top:1px solid rgba(75, 100, 72, 0.2); 
 }
  @media (max-width: 768px) {  
     .title-feed{
@@ -245,7 +241,7 @@ html, body{
 }
 .timeline-title {
   margin-top: 0;
-  color: inherit;
+  color: #305729;
 }
 .timeline-body > p,
 .timeline-body > ul {
@@ -257,6 +253,15 @@ html, body{
 h1{
  color:#305729;   
 }
+.modal {
+     overflow-y: auto;
+     }
+    .modal-open {
+    overflow: auto;
+    }
+    .modal-open[style] {
+    padding-right: 0px !important;
+    }
 // Navbar =====================================================================
 .navbar {
   border: none;

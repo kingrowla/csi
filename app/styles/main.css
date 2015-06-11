@@ -85,11 +85,9 @@
   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2); }
 
-body.modal-open {
-  overflow: auto; }
-
 body {
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  background-color: #1A2817; }
 
 html, body {
   height: 100%; }
@@ -102,21 +100,29 @@ html, body {
 .title-feed {
   height: auto;
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   border: none;
   position: fixed;
   top: 118px;
   text-align: center;
   z-index: 999;
-  width: 100%; }
+  width: 100%;
+  border-top: 1px solid rgba(75, 100, 72, 0.2); }
 
+@media (max-width: 768px) {
+  .title-feed {
+    top: 47px;
+    padding: 15px; }
+
+  .title-feed span {
+    font-size: 36px; } }
 /*timeline*/
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
-  position: relative;
-}
+  position: relative; }
+
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -125,28 +131,28 @@ html, body {
   width: 3px;
   background-color: #eeeeee;
   left: 50%;
-  margin-left: -1.5px;
-}
+  margin-left: -1.5px; }
+
 .timeline > li {
   margin-bottom: 20px;
-  position: relative;
-}
+  position: relative; }
+
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
-  display: table;
-}
+  display: table; }
+
 .timeline > li:after {
-  clear: both;
-}
+  clear: both; }
+
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
-  display: table;
-}
+  display: table; }
+
 .timeline > li:after {
-  clear: both;
-}
+  clear: both; }
+
 .timeline > li > .timeline-panel {
   width: 46%;
   float: left;
@@ -155,8 +161,8 @@ html, body {
   padding: 20px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -166,8 +172,8 @@ html, body {
   border-left: 15px solid #ccc;
   border-right: 0 solid #ccc;
   border-bottom: 15px solid transparent;
-  content: " ";
-}
+  content: " "; }
+
 .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -177,8 +183,8 @@ html, body {
   border-left: 14px solid #fff;
   border-right: 0 solid #fff;
   border-bottom: 14px solid transparent;
-  content: " ";
-}
+  content: " "; }
+
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
@@ -195,60 +201,61 @@ html, body {
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
+  border-bottom-left-radius: 50%; }
+
 .timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
-}
+  float: right; }
+
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
-  right: auto;
-}
+  right: auto; }
+
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
-  right: auto;
-}
+  right: auto; }
+
 .timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
+  background-color: #2e6da4 !important; }
+
 .timeline-badge.success {
-  background-color: #3f903f !important;
-}
+  background-color: #3f903f !important; }
+
 .timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
+  background-color: #f0ad4e !important; }
+
 .timeline-badge.danger {
-  background-color: #d9534f !important;
-}
+  background-color: #d9534f !important; }
+
 .timeline-badge.info {
-  background-color: #5bc0de !important;
-}
+  background-color: #5bc0de !important; }
+
 .timeline-title {
   margin-top: 0;
-  color: inherit;
-}
+  color: #305729; }
+
 .timeline-body > p,
 .timeline-body > ul {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
+
 .timeline-body > p + p {
-  margin-top: 5px;
-}
-h1{
- color:#305729;   
-}
+  margin-top: 5px; }
 
-@media (max-width: 768px) {
-  .title-feed {
-    top: 47px;
-    padding: 15px; }
+h1 {
+  color: #305729; }
 
-  .title-feed span {
-    font-size: 36px; } }
+.modal {
+  overflow-y: auto; }
+
+.modal-open {
+  overflow: auto; }
+
+.modal-open[style] {
+  padding-right: 0px !important; }
+
 .navbar {
   border: none;
   border-radius: 0;

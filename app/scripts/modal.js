@@ -4,6 +4,11 @@ $("#contactCall").click(function(evt) {
     _gaq.push(["_trackEvent", "CTA", "'Contact Call'"]);
     conversionSource = "Menu";
   });
+function expertModal(){
+    $("#salesModal").modal('show');
+    _gaq.push(["_trackEvent", "CTA", "'Expert Call'"]);
+    conversionSource = "Menu";
+}
 
   $("#sendInfo").click(function(evt) {
       var name = $("#inputName").val(),
