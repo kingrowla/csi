@@ -88,12 +88,12 @@
 body {
   overflow-x: hidden !important;
   background-color: #fff; 
-background-image: url("../images/bg2.png");
+background-image: url("../images/bg2.jpg");
 }
 
 html, body {
   height: 100%; 
-  -ms-overflow-style: none !important; 
+/*  -ms-overflow-style: none !important; */
 }
 @-ms-viewport {
     width: auto;

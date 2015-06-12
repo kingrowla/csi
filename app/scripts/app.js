@@ -22,7 +22,13 @@ $(function () {
         }
     });
 });
-
+//$(".navbar").find("[data-toggle=collapse]").click(function(e){
+//
+//    e.preventDefault();e.stopPropagation();
+//    $(".navbar").find(".collapse.in").collapse("hide");
+//    $($(this).attr("data-target")).collapse("show");
+//
+//});
 $("#year").text((new Date).getFullYear());
 angular
     .module('csiPublicWebsite2015App', [
