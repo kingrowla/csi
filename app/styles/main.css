@@ -80,7 +80,7 @@
 .bullet-box-shadow {
   padding: 5px 10px 25px;
   border: 3px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2); }
@@ -101,13 +101,14 @@ html, body {
 @media (max-width: 768px) {
 .center-block{
     float:none;
-    margin:10px 0;
+    text-align: center;
+    margin-bottom:25px;
 }
 }
 @media (min-width: 768px) {
 .center-block{
     float:right;
-    margin:75px 15px;
+    margin:75px 10px 25px 25px;
 }
 }
 .rslidesContainer{
@@ -136,7 +137,8 @@ html, body {
   text-align: center;
   z-index: 999;
   width: 100%;
-  border-top: 1px solid rgba(75, 100, 72, 0.2); }
+  border: 1px solid rgba(0, 0, 0, 0.05)
+  }
 
 @media (max-width: 768px) {
   .title-feed {
@@ -321,7 +323,8 @@ h1 {
   .navbar .dropdown-header {
     color: rgba(255, 255, 255, 0.5); }
   .navbar-default {
-    border-top: 3px solid #4e8c42;
+    border-top: 7px solid #1A7C07;
+    border-bottom: 1px solid rgba(75, 100, 72, 0.2); 
     background-color: white; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #4e8c42; }
