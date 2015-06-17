@@ -8,10 +8,10 @@
  * Controller of the csiPublicWebsite2015App
  */
 angular.module('csiPublicWebsite2015App')
-  .controller('PolicyCtrl', function ($scope) {
+.controller('PolicyCtrl', function ($scope) {
     $("html, body").animate({
             scrollTop: 0
         }, 200);
        
-    
+    $('.rslidesContainer').hide();
   });

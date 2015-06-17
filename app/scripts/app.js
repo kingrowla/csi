@@ -34,9 +34,10 @@ angular
     .module('csiPublicWebsite2015App', [
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ])
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $stateProvider, $urlRouterProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
@@ -58,7 +59,25 @@ angular
                 templateUrl: 'views/media.html',
                 controller: 'MediaCtrl'
             })
+            .when('/help', {
+                templateUrl: 'views/help.html',
+                controller: 'HelpCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
+    var partialViewURL = 'views/help-partial-views/';
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        // HOME STATES AND NESTED VIEWS ========================================
+        .state('faq1', {
+            url: '/faq1',
+            templateUrl: partialViewURL+'faq1.html'
+        })
+        
+        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
+        .state('faq2', {
+            url: '/faq2',
+            templateUrl: partialViewURL+'faq2.html'      
+        });
     });

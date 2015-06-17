@@ -2,16 +2,17 @@
 
 /**
  * @ngdoc function
- * @name csiPublicWebsite2015App.controller:MainCtrl
+ * @name csiPublicWebsite2015App.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the csiPublicWebsite2015App
  */
 angular.module('csiPublicWebsite2015App')
-.controller('MediaCtrl', function ($scope) {
+.controller('HelpCtrl', function ($scope) {
      $("html, body").animate({
             scrollTop: 0
         }, 200);
        $('.rslidesContainer').hide();
     
   });
+ 
