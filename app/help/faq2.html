@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Welcome to CollectorSolutions.com!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 14px
+}
+.style2 {font-size: 18px}
+.style3 {font-size: 24px; }
+.style6 {
+	font-size: 10px;
+	color: #FF0000;
+}
+-->
+</style>
+</head>
+
+<body><!-- div to center the content --> 
+<DIV id=container align=center><!-- div to shadow the content area --> 
+<DIV id=shadow><!-- Flash navigation block --> 
+<DIV id=FlashBar><a href="/index.htm"><img src="/images/csi_Logo_Blur.jpg" width="183" height="81" border="0"></a></DIV>
+<!-- welcome block --> 
+<DIV id=welcome>
+<TABLE cellSpacing=0 cellPadding=0 width=751 border=0>
+<TBODY>
+<TR>
+<TD width=428>&nbsp;</TD>
+<TD width=323>&nbsp;</TD>
+</TR></TBODY></TABLE>
+<p class="style3"><a href="index.html">Support</a>
+</p>
+<table width="714" border="0">
+  <tr>
+    <td><p align="right"><a href="/help/index.html">return to FAQs</a> </p>
+      <p align="left" class="style2">Internet Explorer keeps on timing out.</p>
+      <p align="left" class="style1"><a href="http://support.microsoft.com/kb/813827" target="_blank">Please read Microsoft Knowledge Base Article, for more details.</a><br>
+          <br>
+            <span class="style6"><strong>Important</strong> This section, method, or task contains steps that tell you how   to modify the registry. However, serious problems might occur if you modify the   registry incorrectly. Therefore, make sure that you follow these steps   carefully. For added protection, back up the registry before you modify it.   Then, you can restore the registry if a problem occurs. For more information   about how to back up and restore the registry, click the following article   number to view the article in the Microsoft Knowledge Base: </span></p>
+      <DIV>
+        <div align="left"><A href="http://support.microsoft.com/kb/322756/" target="_blank">322756</A>&nbsp; How to back up and   restore the registry in Windows<br>
+            <br>
+          </div>
+      </DIV>
+      <DIV id="kb_section">
+        <DIV>
+          <div align="left">You may have to increase the default time-out value for persistent HTTP   connections in Internet Explorer if you are using a Web program that must   communicate with Internet Explorer over the same TCP/IP socket after one idle   minute. To change the default time-out value for persistent HTTP connections in   Internet Explorer, add a DWORD value that is named KeepAliveTimeout to the   following registry key, and then set its value data to the time (in   milliseconds) that you want Internet Explorer to wait before resetting an idle   connection:
+          </div>
+          <DIV>
+            <div align="left">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\InternetSettings</div>
+          </DIV>
+          <div align="left">To   do this, follow these steps:
+            <OL>
+              <LI>Click <STRONG>Start</STRONG>, click <STRONG>Run</STRONG>, type regedit, and then   click <STRONG>OK</STRONG>.   
+              <LI>Locate and then click the following key in the registry:
+              </OL>
+          </div>
+          <OL><LI><DIV>
+            <div align="left">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\InternetSettings</div>
+          </DIV>
+              <LI>
+                <div align="left">On the <STRONG>Edit</STRONG> menu, point to <STRONG>New</STRONG>, and then click <STRONG>DWORD   Value</STRONG>.  
+                </div>
+              <LI>
+                <div align="left">Type KeepAliveTimeout, and then press ENTER.   
+                </div>
+              <LI>
+                <div align="left">On the <STRONG>Edit</STRONG> menu, click <STRONG>Modify</STRONG>.   
+                </div>
+              <LI>
+                <div align="left">Type the appropriate time-out value (in milliseconds), and then click <STRONG>OK</STRONG>. For example, to set the time-out value to two   minutes, type 120000.  
+                </div>
+              <LI>
+                <div align="left">Restart Internet Explorer.</div>
+              </LI>
+          </OL>
+          <div align="left">If you set the KeepAliveTimeout value to   less than 60,000 (one minute), you may have problems communicating with Web   servers that require persistent HTTP connections. For example, you may receive a   "Page cannot be displayed" error message. <BR>
+              <BR>
+            If you must have a   KeepAliveTimeout value higher than 120000 (two minutes), you must create an   additional registry key and set its value equal to the KeepAliveTimeout value   that you want. The additional registry key is ServerInfoTimeout. It is a DWORD   with a value (in milliseconds) and in the same location as   KeepAliveTimeout.<BR>
+            <BR>
+            For example, to use a three-minute KeepAliveTimeout   value, you must create the following registry keys:
+          </div>
+          <DIV>
+            <div align="left">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\InternetSettings<BR>
+              <BR>
+                <strong>KeepAliveTimeout</strong> DWORD value 180000 (in milliseconds) <BR>
+                <strong>ServerInfoTimeout</strong> DWORD value   180000 (in milliseconds)<br>
+              </div>
+          </DIV>
+          <div align="left">By default, HTTP 1.1 is enabled in Internet   Explorer except when you establish an HTTP connection through a proxy server.   When HTTP 1.1 is enabled, HTTP connections remain open (or persistent) by   default until the connection is idle for one minute or until the value that is   specified by the KeepAliveTimeout value in the registry is reached. You can   modify HTTP 1.1 settings in Internet Explorer by using the <STRONG>Advanced</STRONG> tab in the <STRONG>Internet   Options</STRONG> dialog box.</div>
+        </DIV>
+      </DIV>
+      <DIV>
+        <DIV>
+          <HR>
+        </DIV>
+      </DIV>
+      </td>
+  </tr>
+</table>
+</DIV>
+<!-- Container for the page content --> 
+<DIV id=ContentContain align=left><!-- Destintion CSI content (replace text within 
+<P>tags) -->
+  <!-- &lt;---- Ends the content blocks --> 
+</DIV>
+<!-- &lt;---- Ends the container for the page content --> </DIV><!-- &lt;---- Ends div to shadow the content --> <!-- div for the footer --> 
+<DIV id=footer align=left><IMG alt="" src="../images/footer.gif"><BR>
+<P><A href="../index.htm">Home</A> | <A href="../solution.htm">Solution</A> | <A href="../team.htm">CSI Team</A> | <A href="../clients.htm">Clients</A> | <A href="../affiliates.htm">Affiliates</A> | <A href="../news.htm">New &amp; Events</A> | <A href="../contact.htm">Contact US</A> | <A href="../manage.htm">Management Console</A></P>
+<P>©2004 CollectorSolutions.com All Rights Reserved</P></DIV></DIV><!-- &lt;---- Ends div to center the content --> </FONT></body>
+</html>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17097674-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
