@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc overview
  * @name csiPublicWebsite2015App
@@ -22,62 +21,44 @@ $(function () {
         }
     });
 });
-//$(".navbar").find("[data-toggle=collapse]").click(function(e){
-//
-//    e.preventDefault();e.stopPropagation();
-//    $(".navbar").find(".collapse.in").collapse("hide");
-//    $($(this).attr("data-target")).collapse("show");
-//
-//});
+
 $("#year").text((new Date).getFullYear());
-angular
-    .module('csiPublicWebsite2015App', [
-    'ngRoute',
+
+angular.module('csiPublicWebsite2015App', [
     'ngSanitize',
     'ngTouch',
-    'ui.router'
-  ])
-    .config(function ($routeProvider, $stateProvider, $urlRouterProvider) {
-        $routeProvider
-            .when('/', {
+    'ui.router'])
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('/');
+        $stateProvider
+            .state('home', {
+                url: '/',
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
             })
-            .when('/about', {
+            .state('about', {
+                url: '/about',
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
             })
-            .when('/solution', {
+            .state('solution', {
+                url: '/solution',
                 templateUrl: 'views/solution.html',
                 controller: 'SolutionCtrl'
             })
-            .when('/privacy', {
+            .state('privacy', {
+                url: '/policy.html',
                 templateUrl: 'views/policy.html',
                 controller: 'PolicyCtrl'
             })
-            .when('/media', {
+            .state('media', {
+                url: '/media',
                 templateUrl: 'views/media.html',
                 controller: 'MediaCtrl'
             })
-            .when('/help', {
+            .state('help', {
+                url: '/help',
                 templateUrl: 'views/help.html',
                 controller: 'HelpCtrl'
-            })
-            .otherwise({
-                redirectTo: '/'
             });
-    var partialViewURL = 'views/help-partial-views/';
-    $urlRouterProvider.otherwise('/');
-    $stateProvider
-        // HOME STATES AND NESTED VIEWS ========================================
-        .state('faq1', {
-            url: '/faq1',
-            templateUrl: partialViewURL+'faq1.html'
-        })
-        
-        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('faq2', {
-            url: '/faq2',
-            templateUrl: partialViewURL+'faq2.html'      
-        });
     });

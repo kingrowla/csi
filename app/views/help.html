@@ -2,32 +2,21 @@
     <div class="container" style="">
         <div class="col-xs-12">
            
-                <h2>Collector Solutions, Inc. Support</h2>
-          
+                <h1>Collector Solutions, Inc. Support</h1>
+          <hr>
             <div class="col-xs-12">
                <nav>
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li><a ui-sref="faq1">1</a></li>
-                    <li><a ui-sref="faq2">2</a></li>
-                    <li><a ui-sref="faq3">3</a></li>
-                    <li><a ui-sref="faq4">4</a></li>
-                    <li><a ui-sref="faq5">5</a></li>
-                    <li><a ui-sref="faq6">6</a></li>
-                    <li><a ui-sref="faq7">7</a></li>
-                    <li><a ui-sref="faq8">8</a></li>  
-                    <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a ui-sref="help.faq1" >Desktop shortcuts</a></li>
+                    <li><a ui-sref="help.faq2">Timeouts</a></li>
+                    <li><a ui-sref="help.faq3">Using FTP</a></li>
+                    <li><a ui-sref="help.faq4">Clearing cache</a></li>
+                    <li><a ui-sref="help.faq5">Updating certificates</a></li>
+                    <li><a ui-sref="help.faq6">Credit card process</a></li>
+                  </ul> 
                 </nav>
-                <div ui-view>Default view here</div>
+               
+                <div ui-view style="text-align:left; margin-top:25px; margin-bottom:50px;"><div style="text-align:center; padding-top:50px;">Please select a topic</div></div>
             </div>
         </div>
     </div>
